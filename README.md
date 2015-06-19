@@ -1,0 +1,1 @@
+# sbt-multiple-project-example
