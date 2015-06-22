@@ -2,11 +2,12 @@ package controllers
 
 import play.api._
 import play.api.mvc._
+import utils.RichString._
 
-class HelloApp extends Controller {
+object HelloApp extends Controller {
 
   def index = Action {
-    Ok("Hello scala blog")
+    Ok("Hello scala blog ".utilMethod)
   }
 
 }

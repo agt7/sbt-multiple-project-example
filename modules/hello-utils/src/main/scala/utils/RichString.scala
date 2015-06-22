@@ -4,7 +4,7 @@ import scala.language.implicitConversions
 
 case class RichString(s: String) {
 
-  def toUtilMethod: String = {
+  def utilMethod: String = {
     s ++ "use util methods"
   }
 
