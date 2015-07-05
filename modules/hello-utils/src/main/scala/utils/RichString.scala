@@ -1,12 +1,10 @@
 package utils
 
-import scala.language.implicitConversions
+import org.joda.time.DateTime
 
 case class RichString(s: String) {
 
-  def utilMethod: String = {
-    s ++ "use util methods"
-  }
+  def addNowDateTime(): String = s ++ DateTime.now.toString("yyyy-MM-dd hh:mm:ss.sss")
 
 }
 
